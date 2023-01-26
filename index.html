@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Page Title-->
+    <title>Code Quiz Challenge</title>
+</head>
+
+<body>
+    <!--Header Container-->
+    <header class="container">
+        <div id="startpage">
+            <h2>This will test what you know</h2>
+            <h2>about different full stack coding concepts</h2>
+    <button id="startbtn">Begin Coding Quiz</button>
+    <button id="startPageHighscore" onClick="showHighscore()">High Scores</button>
+    </div>
+
+    <div id="quiz">
+        <div id="timer">Time remaining: </div>
+            <div id="questions"><p>Questions Placeholder</p></div>
+                <button id="a" onclick="checkAnswer('a')">A</button>
+                <button id="b" onclick="checkAnswer('b')">B</button>
+                <button id="c" onclick="checkAnswer('c')">C</button>
+                <button id="d" onclick="checkAnswer('d')">D</button>
+            <div id="result"></div>
+        </div>
+        <div id="gameover">
+            <!--High Score Section-->
+            <div id="finalScore"></div>
+            <input type="text" size = "40" placeholder="Enter intials for high score results" name="initials" id="initials"/>
+            <button id="submitScore">Submit Score</button>
+        </div>
+        <div id="highscoreContainer">
+        <div id="highscore-header">
+            <h3>User Initials</h3>
+            <h3>Score</h3>
+        </div>
+        <div id="highscore-initials"></div>
+        <div id="highscore-score"></div>
+        </div>
+        <div id="endGameBtns">
+            <button id="playAgain" onclick="replayQuiz()">Play Again</button>
+            <button id="clearHighscore" onclick="clearScore()">Clear Hisghscores</button>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
